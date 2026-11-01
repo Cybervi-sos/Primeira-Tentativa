@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160d20">
+  <title>Your Little Universe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="universe" aria-label="Your Little Universe">
+    <div class="scene-wrap" id="sceneWrap">
+      <img class="scene" id="scene" src="assets/the-library.png" alt="Biblioteca pixel art do Your Little Universe">
+      <div class="scene-shade" aria-hidden="true"></div>
+      <div class="sparkles" aria-hidden="true">
+        <i style="--x:8%;--y:25%;--d:0s"></i><i style="--x:24%;--y:62%;--d:.8s"></i>
+        <i style="--x:43%;--y:20%;--d:1.5s"></i><i style="--x:67%;--y:34%;--d:.4s"></i>
+        <i style="--x:84%;--y:19%;--d:1.1s"></i><i style="--x:91%;--y:65%;--d:2s"></i>
+      </div>
+
+      <!-- Hotspots alinhados aos três livros da estante na arte original -->
+      <button class="book-hit email" data-book="E-mail" aria-label="Abrir livro E-mail">
+        <span class="hit-label">✉ E-mail</span><span class="hit-hint">Abrir livro</span>
+      </button>
+      <button class="book-hit github" data-book="GitHub" aria-label="Abrir livro GitHub">
+        <span class="hit-label">◈ GitHub</span><span class="hit-hint">Abrir livro</span>
+      </button>
+      <button class="book-hit linkedin" data-book="LinkedIn" aria-label="Abrir livro LinkedIn">
+        <span class="hit-label">in LinkedIn</span><span class="hit-hint">Abrir livro</span>
+      </button>
+
+      <button class="dimension library active" data-dimension="library">📖 The Library</button>
+      <button class="dimension soundroom" data-dimension="soundroom">♫ The Soundroom</button>
+      <button class="explore" id="explore">✧ Explore</button>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <p class="mobile-note">Toque nos livros para explorar. Use os botões no rodapé para trocar de dimensão.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
