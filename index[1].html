@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160f20">
+  <title>Your Little Universe — Vitória Cristina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hud">
+      <div class="identity">
+        <div class="avatar" aria-hidden="true">✦</div>
+        <div><h1>Vitória Cristina</h1><p>Engenharia de Software · Sonhadora · Leitora</p></div>
+      </div>
+      <nav class="social" aria-label="Links">
+        <a href="mailto:SEU-EMAIL" title="E-mail">✉</a>
+        <a href="https://github.com/SEU-USUARIO" title="GitHub">◉</a>
+        <a href="https://www.linkedin.com/in/SEU-LINKEDIN" title="LinkedIn">in</a>
+      </nav>
+      <section class="level">
+        <div><strong>★ LV. <span id="level">01</span></strong><span><b id="xp">120</b> / 200 XP</span></div>
+        <div class="xp-track"><i id="xpbar"></i></div>
+      </section>
+    </header>
+
+    <section class="welcome"><span class="twinkle">✦</span> Bem-vinda ao meu universo <span class="twinkle">✧</span></section>
+
+    <section class="world" id="world" aria-label="Mundo interativo">
+      <img class="scene" id="scene" src="assets/the-library.png" alt="Biblioteca pixel art aconchegante">
+      <div class="stars" aria-hidden="true">
+        <i>✦</i><i>✧</i><i>✦</i><i>·</i><i>✧</i><i>✦</i><i>·</i><i>✧</i>
+      </div>
+
+      <div class="book-shelf" id="books">
+        <button class="book" data-book="email"><span class="tag">E-mail</span><span class="book-icon">✉</span></button>
+        <button class="book" data-book="github"><span class="tag">GitHub</span><span class="book-icon">⌘</span></button>
+        <button class="book" data-book="linkedin"><span class="tag">LinkedIn</span><span class="book-icon">in</span></button>
+      </div>
+
+      <div class="cat" id="cat" aria-label="TIAO, o gatinho companheiro">🐈‍⬛<small>TIAO</small></div>
+      <div class="page-turn" aria-hidden="true">📖</div>
+      <div class="speech" id="speech" role="status">Escolha um livro para explorar ✦</div>
+    </section>
+
+    <footer class="bottom">
+      <p>✦ Um universo de histórias, código e música.</p>
+      <div class="scene-switch" role="group" aria-label="Trocar dimensão">
+        <button class="active" data-scene="library">▣ The Library</button>
+        <button data-scene="soundroom">♫ The Soundroom</button>
+      </div>
+    </footer>
+  </main>
+
+  <dialog id="bookDialog">
+    <button class="close" id="closeDialog" aria-label="Fechar">×</button>
+    <p class="eyebrow">UM LIVRO SE ABRIU</p>
+    <h2 id="dialogTitle">GitHub</h2>
+    <p id="dialogText">Explore meus projetos e experiências.</p>
+    <a id="dialogLink" href="https://github.com/SEU-USUARIO" target="_blank" rel="noreferrer">Abrir página ↗</a>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
